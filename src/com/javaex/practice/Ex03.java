@@ -7,7 +7,7 @@ public class Ex03 {
 		int[] intA = {3,6,9};
 		
 		int[] intB;
-		intB=intA;
+		intB=intA;		//intA 와 intB 는 같은 주소를 가지고 있음
 		intB[0]=20;
 		intB[2]=10;
 		

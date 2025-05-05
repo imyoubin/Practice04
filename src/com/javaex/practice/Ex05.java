@@ -8,16 +8,24 @@ public class Ex05 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int[] intNumbers= new int[5];
-				
-		int sum=0;
-		
-		for(int i=0; i<intNumbers.length; i++) {
-			intNumbers[i]=sc.nextInt();
-			sum=sum+intNumbers.length;			
+		int[] dataArray = new int[5];
+		int num;
+		double sum = 0;
+
+		// 키보드에서 배열 크기만큼 입력 받아 배열에 저장하는 코드
+		for (int i = 0; i < dataArray.length; i++) {
+			num = sc.nextInt();
+			dataArray[i] = num;
 		}
-		double average = (double) sum/intNumbers.length;
-		System.out.println("평균은 "+average+" 입니다.");
+
+		// 배열에 저장된 정수 값 더하기
+		for (int i = 0; i < dataArray.length; i++) {
+			sum = sum + dataArray[i];
+		}
+
+		// 평균값 출력
+		System.out.println("평균은 " + sum / dataArray.length + " 입니다.");
+
 		sc.close();
 	}
 

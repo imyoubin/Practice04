@@ -24,7 +24,7 @@ public class Ex01 {
 		
 		int result =0;
 		
-		for(int i=0; i<intArray.length; i++) {
+		for(int i=0; i<intArray.length; i++) {// <=  를 < 로 변경
 			result=result+intArray[i];
 		}
 		System.out.println(result);
